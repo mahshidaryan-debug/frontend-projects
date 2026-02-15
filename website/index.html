@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html>
+<body
+style="background:url(https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg); background-size:100% 100%;"
+
+
+
+></body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body
+style="background:url(https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg); background-size:100% 100%;"
+>
+<div style="background-color:black; border-style: groove;border-style: inset;  border-radius: 25px"><center>
+<h1 style="color:white;font-size:60px" > یادگیری کدنویسی</h1>
+<p  style="font-size:30px;color:white"> کامل ترین سایت برای یادگیری برنامه نویسی</p></center> <body>
+  <STYLE>
+  .myDiv {
+    background-color: orange;    
+    text-align: center;
+  }
+  </STYLE>
+  <!DOCTYPE html>
+  <html style="background-color: black;">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .dropbtn {
+    background-color: rgb(16, 230, 245);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+    display: flex;  
+justify-content: center;  
+align-items: center;  
+    align-items: center;
+    margin: auto;
+    text-align: center;  
+    display: grid;  
+
+   
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(32, 175, 185);
+    border-radius: 15%;   display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    text-align: center
+   }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 80%;
+  
+    
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;  border-radius: 80%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    position:relative;
+    left:550px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+   .dropbtn{
+  padding: 15px 100px;
+
+   }
+
+</style>
+  </head>
+  <body style="background:url(https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg); background-size:100% 100%;"
+  >
+  
+     
+   
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">بخش سرچ</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="...مباحث رو جستجو کنید" id="myInput" onkeyup="filterFunction()">
+      <a href="first page.html">مقدمه جاوااسکریپت</a>
+      <a href="secondpage.html">معرفی جاوااسکریپت</a>
+       <a href="thirdpage.html">خروجی جاوااسکریپت</a>
+      <a href="pagefour.html">بیانیه های جاوااسکریپت</a>
+      <a href="fifthpage.html"> کامنت گذاری در جاوااسکریپت</a>
+      <a href="sixpage.html"> متفیر های جاوااسکریپت</a>
+          <a href="page seven.html">تگlet</a>
+      <a href="page8.html">تگconst</a>
+      <a href="#page9.html
+">اپراتور های جاوااسکریپت</a>
+      <a href="page10.html">محاسبات جاوااسکریپت</a>
+      <a href="page11.html">انواع داده های جاوااسکریپت</a>
+      <a href="page12.html"> توابع جاوااسکریپت</a>
+      <a href="page13.html">اشیا جاوااسکریپت</a>
+      <a href="page14.html"> اعداد در جاوااسکریپت</a>
+      <a href="page15.html">آرایه ها در جاواساکریپت</a>
+      <a href="PAGE16.HTML"> math objectجاوااسکریپت</a>
+      <a href="page17.html"> تصادفی،چرخشی، رندوم در جاوااسکریپت</a>
+      <a href="page18.html">بولین های جاوااسکریپت</a>
+      <a href="page19.html">حلقهforدر جاوااسکریپت</a>
+      <a href="page20.html">متد مپ در جاوااسکریپت </a>
+   
+    </div>
+  </div>
+  
+  <script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+</div>
+</body>
+</html> 
+
+
+</body>
+</html>
+
+
+
+<html><head><style></style></head>
+<body
+style="background:url(https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg); background-size:100% 100%;"
+
+
+
+></body>
+
+
+<body >
+    <STYLE>
+    .myDiv {
+      background-color: orange;    
+      text-align: center;
+      border-style: inset;  border-radius: 25px;
+    }
+    </STYLE>
+    <center>
+    <DIV CLASS="myDIV" style=" background-color: #de7443; height:40vh ; width:350px  ;   border: 6px outset rgb(126, 117, 117);
+    
+    ">
+    <button  style="background-color:rgb(255, 227, 190)" onclick="typeWriter()"><h2>!خوش آمدید<h2></button>
+    <h3 style="  direction: rtl;
+    "id="demo"></h3>
+    </DIV></center>
+    <script>
+    var i = 0;
+    var txt = '  یادگیری جاوااسکریپت با من!به سایت من خوش آمدید،امیدوارم نهایت استفاده را از مطالب سایت ببرید و برایتان مفید و لذت بخش باشد '
+    
+    
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    
+    </script><div style="background-color: black;border-style: inset;  border-radius: 25px">
+    <h1 style="color:white;padding: 0px 25px;font-size: 70px;"> JavaScript</h1>
+ <!-- HTML !-->
+<button class="button-64" role="button"><span class="text" style="color:white;"><a href="first page.html">آموزش جاوااسکریپت</a></span></button>
+<button class="button-64" role="button" ><span class="text" style="color:white;"><a href="page4.html">مرجع جاوااسکریپت</a></span></button>
+<style>
+    /* CSS */
+    .button-64 {
+      padding: 0px 25px;
+      background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 20px;
+      justify-content: center;
+      line-height: 1em;
+      max-width: 100%;
+      min-width: 140px;
+      padding: 3px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    
+    .button-64:active,
+    .button-64:hover {
+      outline: 0;
+    }
+    
+    .button-64 span {
+      background-color: rgb(5, 6, 45);
+      padding: 16px 24px;
+      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+      transition: 300ms;
+    }
+    
+    .button-64:hover span {
+      background: none;
+    }
+    
+    @media (min-width: 768px) {
+      .button-64 {
+        font-size: 24px;
+        min-width: 196px;
+      }
+    }</style>
+
+ 
+</div>
+  
+    </body>
+    
+
+
+
+
+
+
+
+
+    
+
+</html>
