@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 199, 96);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(255, 240, 212);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(255, 166, 0);
+  color: black;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a  href="realpage.html">برگشت به خانه</a>
+  <a href="page4.html" class="active" >مرجع جاوااسکریپت </a>
+  <a href="first page.html"  >آموزش جاوااسکریپت</a>
+    <a  href="aboutme.html" >! درباره من </a>
+
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ .row {
+  display: flex;
+  display: flex;
+  flex-direction: row-reverse;
+ }
+
+ .left {
+  flex: 1%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+ .right {
+  flex: 65%;
+  padding: 15px;
+}
+
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid orange;
+}
+
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: rgb(255, 240, 212);
+}
+.active {
+  background-color: rgb(255, 168, 6);
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="left" style="direction:rtl;background-color:#bbb;">
+    <h2>مرجع جاوااسکریپت</h2>
+    <ul id="myMenu">
+      <li><a   class="active" href="page4.html"> جاوااسکریپت بر اساس دسته بندی</a></li>
+      <li><a  href="page3.html">جاوااسکریپت بر اساس الفبا</a></li>
+      
+
+    </ul>
+  </div>
+  
+  
+  <div class="right" style="background-color:rgb(255, 255, 255);">
+  
+    <div class="right" style="background-color:rgb(255, 255, 255);">
+      <h1 style="direction:rtl; "> مرجع جاوااسکریپت</h1>
+        <i >
+        
+        
+          
+    <h1 style="direction:rtl;" class="ml15">
+      <span class="word">  جاوااسکریپت بر اساس
+
+      </span>
+      <span class="word"> دسته بندی
+
+      </span>
+    </h1>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>.ml15 {
+      font-weight: 800;
+      font-size: 3.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+    }
+    
+    .ml15 .word {
+      display: inline-block;
+      line-height: 1em;
+    }</style>
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>anime.timeline({loop: true})
+      .add({
+        targets: '.ml15 .word',
+        scale: [14,1],
+        opacity: [0,1],
+        easing: "easeOutCirc",
+        duration: 800,
+        delay: (el, i) => 800 * i
+      }).add({
+        targets: '.ml15',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });</script>
+    
+     
+          
+            <div class="right" style="background-color:rgb(255, 255, 255);">
+          
+
+
+
+
+<h1 style="direction:rtl;"مرجع جاوا اسکریپت و HTML DOM></h1>
+
+<p style=" direction: rtl; font-size: 20px;">این بخش شامل مستندات مرجع کامل جاوا اسکریپت است.</p>
+
+
+<h1 style="direction: rtl;">مرجع جاوا اسکریپت
+<p style=" direction: rtl; font-size: 20px;"
+> مراجع خصوصیات و روش های تمام اشیاء جاوا اسکریپت را همراه با مثال ها توصیف می کنند.</p></h1>
+<!DOCTYPE html>
+<html>
+<style>
+.filterDiv {
+  float: left;
+  background-color: orange;
+  color: black;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+.btn.active {
+  background-color: orange;
+  color: orange;
+}
+</style>
+<body>
+
+<div class="container">
+  <div class="filterDiv Array">آرایه ها،Array</div>
+  <div class="filterDiv  string">string,رشته</div>
+  <div class="filterDiv  numbers">numbers,اعداد </div>
+  <div class="filterDiv  math">math </div>
+  <div class="filterDiv   date "> date,تاریخ</div>
+  <div class="filterDiv global">global</div>
+  <div class="filterDiv  classes"> classes</div>
+  <div class="filterDiv  error">error,خطا </div>
+  <div class="filterDiv  boolean"> ,بولینboolean</div>
+  <div class="filterDiv   operators "> operators,اپراتورها</div>
+  <div class="filterDiv statement">statement,بیانیه </div>
+  <div class="filterDiv json">json</div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+<h1 style="direction: rtl;">مرجع پنجره</h1>
+<p style="direction: rtl;">مراجع خصوصیات و متدهای شی Window را همراه با مثال ها توصیف می کنند.</p>
+<!DOCTYPE html>
+<html>
+<style>
+.filterDiv {
+  float: left;
+  background-color: orange;
+  color: black;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+.btn.active {
+  background-color: orange;
+  color: black;
+}
+</style>
+<body>
+
+<div class="container">
+  <div class="filterDiv window">window</div>
+  <div class="filterDiv history ">history,تاریخچه</div>
+  <div class="filterDiv  navigator">navigator,ناوبر</div>
+  <div class="filterDiv location ">location,مکان </div>
+  
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<h1 style="direction: rtl;">API های وب</h1>
+<p style="direction: rtl; font-size: 20px;">این مرجع رایج ترین API های وب را همراه با مثال ها توصیف می کند.</p>
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+.filterDiv {
+  float: left;
+  background-color: orange;
+  color: black;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+.btn.active {
+  background-color: orange;
+  color: black;
+}
+</style>
+<body>
+
+<div class="container">
+  <div class="filterDiv Console">Console</div>
+  <div class="filterDiv Geolocation ">  Geolocation </div>
+  <div class="filterDiv  history">history,تاریخچه</div>
+  <div class="filterDiv storage "> stoeage,ذخیره </div>
+  
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</i>
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+<style>.warning:hover {
+  background: #ff9800;
+  color: black;
+  border-color:black;
+}
+</style>
+
+<button class="btn warning"><i><p style="font-size:80;  border-color:black;
+  "><a href="first page.html"> لطفا به بخش آموزش های من هم سری بزنید</i></p></button>
+
+</a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+</div>
+ 
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+

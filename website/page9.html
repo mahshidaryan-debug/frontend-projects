@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 199, 96);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(255, 240, 212);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(255, 166, 0);
+  color: black;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a  href="realpage.html">برگشت به خانه</a>
+  <a href="page4.html">مرجع جاوااسکریپت </a>
+  <a href="first page.html" class="active" >آموزش جاوااسکریپت</a>
+    <a  href="aboutme.html" >! درباره من </a>
+
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ .row {
+  display: flex;
+  display: flex;
+  flex-direction: row-reverse;
+ }
+
+ .left {
+  flex: 1%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+ .right {
+  flex: 65%;
+  padding: 15px;
+}
+
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid orange;
+}
+
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: rgb(255, 240, 212);
+}
+.active {
+  background-color: rgb(255, 168, 6);
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="row">
+  <div class="left" style="direction:rtl;background-color:rgb(255, 221, 157);">
+    <h2>آموزش جاوااسکریپت</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" 
+    placeholder="...جستجو کنید" title="Type in a category">
+    <ul id="myMenu">
+      <li><a    href="first page.html">قدمه جاوااسکریپت</a></li>
+      <li><a  href=" secondpage.html">معرفی جاوااسکریپت</a></li>
+       <li><a   href="thirdpage.html"> خروجی جاوااسکریپت</a></li>
+      <li><a href="pagefour.html"> بیانیه های جاوااسکریپت</a></li>
+      <li><a  href="fifthpage.html">کامنت گذاری در جاوااسکریپت</a></li>
+      <li><a  href="sixpage.html">متغیر های جاوااسکریپت</a></li>
+      <li><a   href="page seven.html">تگ let</a></li>
+             <li><a  href="page8.html">تگconst</a></li>
+      <li><a class="active" href="page9.html"> اپراتور های جااوااسکریپت</a></li>
+      <li><a href="page10.html"> محاسبات جاوااسکریپت</a></li>
+      <li><a href="page11.html"> انواع داده های جاوااسکریپت</a></li>
+      <li><a href="page12.html"> توابع جاوااسکریپت</a></li>
+      <li><a href="page13.html">اشیا جاوااسکریپت</a></li>
+      <li><a href="page14.html"> اعداد در جاوااسکریپت</a></li>
+      <li><a href="page15.html"> آرایه های در جاوااسکریپت</a></li>
+      <li><a href="PAGE16.HTML"> math object در جاوااسکریپت</a></li>
+      <li><a href="page17.html"> تصادفی،چرخشی، رندوم در جاوااسکریپت</a></li>
+      <li><a href="page18.html"> بولین های جاوااسکریپت</a></li>
+      <li><a href="page19.html"> forحلقه در جاوااسکریپت</a></li>
+      <li><a href="page20.html">متد مپ در جاوااسکریپت</a></li>
+ 
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:rgb(255, 255, 255);">
+
+
+
+
+
+    <h1 class='flipY'>اپراتور های جاوااسکریپت </h1>
+    <style> 
+    
+    /* clear background */
+    h1 {
+      padding: 16px;
+      margin: 0;
+    }
+    
+     
+     .flipY {
+      animation-name: spin, depth;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+      text-align: center;
+
+    }
+    @keyframes spin {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(-360deg);
+      }
+    } 
+ </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+  <a href="editor33.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+</button> 
+<i>
+<p style="direction: rtl; font-size: 20px;"> عملگر تخصیص (=) مقداری را به یک متغیر اختصاص می دهد.</p>
+</i>
+<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+  <a href="editor34.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+</button> 
+<i>
+    <p style="direction: rtl; font-size: 20px;">عملگر جمع (+) اعداد را اضافه می کند:</p>
+</i>
+<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+  <a href="editor35.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+</button> 
+<i>
+        <p style="direction: rtl; font-size: 20px;">عملگر ضرب (*) اعداد را ضرب می کند.</p></i>
+        <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+          <a href="editor36.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+        </button> 
+<i>
+            <h1 style="direction: rtl;"> عملگرهای محاسباتی جاوا اسکریپت</h1>
+<p style="direction: rtl; font-size: 20px;">عملگرهای حسابی برای انجام محاسبات روی اعداد استفاده می شوند:</p>
+</i>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    <table>
+      <tr>
+        <th>operators,اپراتورها</th>
+        <th>Description
+    ,شرح</th>
+       </tr>
+      <tr>
+        <td>   +</td>
+        <td>اضافه</td>
+       </tr>
+      <tr>
+        <td>   -  </td>
+        <td>منها کردن</td>
+       </tr>
+      <tr>
+        <td>  *</td>
+        <td>ضرب</td>
+       </tr>
+      <tr>
+        <td>**</td>
+        <td>توان (ES2016)</td>
+       </tr>
+      <tr>
+        <td>    /</td>
+        <td>تقسیم</td>
+       </tr>
+      <tr>
+        <td>   %  </td>
+        <td>مدول (بخش باقیمانده)</td>
+       </tr>
+         <tr>
+        <td>     ++ </td>
+        <td>افزایش</td>
+       </tr>
+         <tr>
+        <td>    --  </td>
+        <td>کاهش</td>
+       </tr>
+      
+    </table>
+
+    
+<h1 style="direction: rtl;">عملگرهای مقایسه جاوا اسکریپت</h1>
+
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    <table>
+      <tr>
+        <th>operators,اپراتورها</th>
+        <th>Description
+    ,شرح</th>
+       </tr>
+      <tr>
+        <td>  == </td>
+        <td> مساوی با</td>
+       </tr>
+      <tr>
+        <td>  ===   </td>
+        <td> ارزش برابر و نوع مساوی  </td>
+       </tr>
+      <tr>
+        <td> !=  </td>
+        <td>نا برابر </td>
+       </tr>
+    
+      <tr>
+        <td>   > </td>
+        <td>بزرگتر از</td>
+       </tr>
+      <tr>
+        <td>  <   </td>
+        <td>کوچکتر از</td>
+       </tr>
+         <tr>
+        <td>   >=    </td>
+        <td> بزرگتر یا مساوی با</td>
+       </tr>
+         <tr>
+        <td>   <=    </td>
+        <td>کمتر یا مساوی </td>
+       </tr>
+        <tr>
+        <td>   ?    </td>
+        <td>اپراتور سه تایی </td>
+       </tr>
+    </table>
+
+    
+
+<h1  style="direction: rtl;"> عملگرهای منطقی جاوا اسکریپت</h1>
+
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    <table>
+      <tr>
+        <th>operators,اپراتورها</th>
+        <th>Description
+    ,شرح</th>
+       </tr>
+     
+         <tr>
+        <td>   &&    </td>
+        <td>منطقی و</td>
+       </tr>
+         <tr>
+        <td>    ||   </td>
+        <td>منطقی یا  </td>
+       </tr>
+        <tr>
+        <td>
+        
+        
+        !
+        </td>
+        <td>منطقی نیست  </td>
+       </tr>
+    </table>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <style>
+            a {
+              text-decoration: none;
+              display: inline-block;
+              padding: 8px 16px;
+            }
+            
+            a:hover {
+              background-color: orange;
+              color: black;
+            }
+            
+            .previous {
+              background-color: orange;
+              color: black;
+            }
+            
+            .next {
+              background-color: orange;
+              color: black;
+            }
+            
+            
+            </style>
+            </head>
+            <body>
+            
+             
+              
+              <a href="page10.html" class="next">&laquo; بعدی</a>
+              <a href="page8.html" class="previous">قبلی &raquo;</a>
+              
+            </body>
+            </html> 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+              </div>
+            <script>
+            function myFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("mySearch");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myMenu");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+            
+            
+</body>
+</html>

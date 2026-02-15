@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 199, 96);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(255, 240, 212);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(255, 166, 0);
+  color: black;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a  href="realpage.html">برگشت به خانه</a>
+  <a href="page4.html">مرجع جاوااسکریپت </a>
+  <a href="first page.html" class="active" >آموزش جاوااسکریپت</a>
+    <a  href="aboutme.html" >! درباره من </a>
+
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ .row {
+  display: flex;
+  display: flex;
+  flex-direction: row-reverse;
+ }
+
+ .left {
+  flex: 1%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+ .right {
+  flex: 65%;
+  padding: 15px;
+}
+
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid orange;
+}
+
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: rgb(255, 240, 212);
+}
+.active {
+  background-color: rgb(255, 168, 6);
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="row">
+  <div class="left" style="direction:rtl;background-color:rgb(255, 221, 157);">
+    <h2>آموزش جاوااسکریپت</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" 
+    placeholder="...جستجو کنید" title="Type in a category">
+    <ul id="myMenu">
+      <li><a   href="first page.html">مقدمه جاوااسکریپت</a></li>
+      <li><a  href="secondpage.html">معرفی جاوااسکریپت</a></li>
+       <li><a   href="thirdpage.html"> خروجی جاوااسکریپت</a></li>
+      <li><a class="active" href="pagefour.html"> بیانیه های جاوااسکریپت</a></li>
+      <li><a  href="fifthpage.html">کامنت گذاری در جاوااسکریپت</a></li>
+      <li><a href="sixpage.html">متغیر های جاوااسکریپت</a></li>
+      <li><a   href="page seven.html">تگ let</a></li>
+             <li><a  href="page8.html">تگconst</a></li>
+      <li><a  href="page9.html"> اپراتور های جااوااسکریپت</a></li>
+      <li><a href="page10.html"> محاسبات جاوااسکریپت</a></li>
+      <li><a   href="page11.html"> انواع داده های جاوااسکریپت</a></li>
+      <li><a    href="page12.html"> توابع جاوااسکریپت</a></li>
+      <li><a  href="page13.html">اشیا جاوااسکریپت</a></li>
+      <li><a   href="page14.html"> اعداد در جاوااسکریپت</a></li>
+      <li><a  href="page15.html"> آرایه های در جاوااسکریپت</a></li>
+      <li><a    href="PAGE16.HTML"> math object در جاوااسکریپت</a></li>
+      <li><a  href="page17.html"> تصادفی،چرخشی، رندوم در جاوااسکریپت</a></li>
+      <li><a   href="page18.html"> بولین های جاوااسکریپت</a></li>
+      <li><a  href="page19.html"> forحلقه در جاوااسکریپت</a></li>
+      <li><a  href="page20.html">متد مپ در جاوااسکریپت</a></li>
+ 
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:rgb(255, 255, 255);">
+
+
+
+    
+
+
+
+    <h1 style="direction: rtl;" class="ml15">
+      <span class="word">بیانیه های</span>
+      <span class="word">جاوااسکریپت</span>
+    </h1>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>ml15 {
+      font-weight: 800;
+      font-size: 3.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+    }
+    
+    .ml15 .word {
+      display: inline-block;
+      line-height: 1em;
+    }
+    </style>
+<script>anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });</script>
+
+
+
+
+
+
+
+<br><br>
+
+<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+  <a href="editor8.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+</button>
+    
+     <i>
+    
+    <h1 style="direction: rtl;">برنامه های جاوا اسکریپت</h1>
+    <p style="direction: rtl; font-size: 20px;"> <br>یک برنامه کامپیوتری لیستی از «دستورالعمل‌هایی» است که باید توسط رایانه «اجرا شوند».
+    
+        در یک زبان برنامه نویسی به این دستورات برنامه نویسی دستورات گفته می شود.<br>
+        
+        برنامه جاوا اسکریپت لیستی از عبارات برنامه نویسی است.<br></p>
+    
+    <div  style="background-color: rgb(255, 236, 130);height: 10vh;border-style: inset;  border-radius: 25px;"><p style="direction: rtl;padding: 0px 25px;">در HTML برنامه های جاوا اسکریپت توسط مرورگر وب اجرا می شوند.</p>
+    
+       </div>
+    
+    <h1 style="direction: rtl;">بیانیه های جاوا اسکریپت</h1>
+    <p style="direction: rtl;">
+    
+       <br> عبارات جاوا اسکریپت از موارد زیر تشکیل شده است:
+    
+    <br>    ارزش ها، اپراتورها، عبارات، کلمات کلیدی و نظرات.
+        
+        این عبارت به مرورگر می‌گوید «سلام دالی» را بنویسد. داخل یک عنصر HTML با id="demo":
+    
+    </p>
+</i>    
+<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+  <a href="editor9.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+</button>
+    <i>
+    
+    <p style="direction: rtl;">اکثر برنامه های جاوا اسکریپت حاوی عبارات جاوا اسکریپت زیادی هستند.
+    
+        عبارات به همان ترتیبی که نوشته شده اند، یک به یک اجرا می شوند.</p>
+    
+        <div  style="background-color: rgb(255, 236, 130);height: 10vh;border-style: inset;  border-radius: 25px">
+          <p style="direction: rtl;padding: 0px 25px;">برنامه های جاوا اسکریپت (و عبارات جاوا اسکریپت) اغلب کد جاوا اسکریپت نامیده می شوند.</p>
+        </div>
+    
+    
+    
+        
+    <h1 style="direction: rtl;">نقطه ویرگول ;</h1>
+    
+    <p style="direction: rtl;">نقطه ویرگول ها عبارات جاوا اسکریپت را جدا می کنند.
+    
+        در پایان هر دستور اجرایی یک نقطه ویرگول اضافه کنید:</p></i>
+        <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+          <a href="editor10.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+        </button>
+    
+            <i>
+    <h1 style="direction: rtl;">طول خط جاوا اسکریپت و شکست خط</h1>
+    
+    
+    <p style="direction: rtl;">برای بهترین خوانایی، برنامه نویسان اغلب دوست دارند از خطوط کد بیش از 80 کاراکتر اجتناب کنند.
+    
+        اگر دستور جاوا اسکریپت در یک خط قرار نگیرد، بهترین مکان برای شکستن آن بعد از عملگر است:
+    </p>
+    </i>
+    <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+      <a href="editor11.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+    </button>
+    <i>
+        <h1 style="direction: rtl;">بلوک های کد جاوا اسکریپت</h1>
+    
+    <p style="direction: rtl;"><br>>وه بندی کرد.
+    
+       <br> هدف بلوک های کد تعریف عباراتی است که باید با هم اجرا شوند.
+        
+        جایی که عباراتی را می‌بینید که در بلوک‌ها گروه‌بندی شده‌اند، در توابع جاوا اسکریپت است:</p>
+    </i>
+    <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+      <a href="editor12.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+    </button>
+    <i>
+            <h1 style="direction: rtl;">JavaScript Keywords
+            </h1>
+            <p style="direction: rtl; font-size: 20px;"><br>عبارات جاوا اسکریپت اغلب با یک کلمه کلیدی برای شناسایی عملکرد جاوا اسکریپت شروع می شود.
+    
+              <br>  Reserved Words Reference ما همه کلمات کلیدی جاوا اسکریپت را فهرست می کند.
+                
+              
+              <br> در اینجا لیستی از برخی از کلمات کلیدی که در این آموزش با آنها آشنا خواهید شد آورده شده است:</p>
+    
+    </i>
+      
+    <style>
+    table {
+      direction: rtl;
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      direction: rtl;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    </head>
+    <body>
+    
+     
+        <table>
+            <tr>
+              <th> کلمه کلیدی</th>
+              <th>شرح</th>
+             </tr>
+            <tr>
+              <td>  var</td>
+              <td>یک متغیر را اعلام می کند</td>
+             </tr>
+            <tr>
+              <td>    let</td>
+              <td>یک متغیر بلوکی را اعلام می کند
+          </td>
+             </tr>
+            <tr>
+              <td>const</td>
+              <td>یک بلوک را ثابت اعلام می کند</td>
+             </tr>
+            <tr>
+              <td>  if</td>
+              <td>بلوکی از دستورات را برای اجرا در یک شرط علامت گذاری می کند</td>
+             </tr>
+            <tr>
+              <td>    switch</td>
+              <td>بلوکی از دستورات را برای اجرا در موارد مختلف علامت گذاری می کند</td>
+             </tr>
+            <tr>
+              <td>     for</td>
+              <td>بلوکی از عبارات را برای اجرا در یک حلقه علامت گذاری می کند</td>
+             </tr>
+              <tr>
+              <td>    function  </td>
+              <td>یک تابع را اعلام می کند</td>
+             </tr>
+              <tr>
+              <td>  return    </td>
+              <td>از یک تابع خارج می شود</td>
+             </tr> <tr>
+              <td>    try  </td>
+              <td> مدیریت خطا را در بلوکی از عبارات پیاده سازی می کند</td>
+             </tr>
+          </table>
+          
+    
+    
+    
+    <br><br>
+
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.previous {
+  background-color: orange;
+  color: black;
+}
+
+.next {
+  background-color: orange;
+  color: black;
+}
+
+
+</style>
+
+</head>
+<body>
+
+ 
+              
+  <a href="fifthpage.html" class="next">&laquo; بعدی</a>
+  <a href="thirdpage.html" class="previous">قبلی &raquo;</a>
+  
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
