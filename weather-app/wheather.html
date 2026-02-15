@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather</title>
+<link rel="stylesheet" href="wheather.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="rain-container" id="rain-container"></div>
+<div class="app-container">
+    <h1>Weather App</h1>
+    <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="weather-card" id="weather-card">
+        <div class="weather-icon" id="weather-icon"><i class="fas fa-sun"></i></div>
+        <h2 id="city-name"></h2>
+        <p class="temperature" id="temp"></p>
+        <p class="description" id="description"></p>
+    </div>
+</div>
+<script src="wheather.js"></script>
+</body>
+</html>
