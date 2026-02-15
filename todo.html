@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo App</title>
+<link rel="stylesheet" href="todo.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="todo-container">
+    <h1> My Todo List </h1>
+    <div class="input-box">
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <button id="add-btn"><i class="fas fa-plus"></i></button>
+    </div>
+    <ul id="task-list"></ul>
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
+    <p id="task-count">0 tasks left</p>
+</div>
+
+<!-- Confetti Canvas -->
+<canvas id="confetti-canvas"></canvas>
+
+<script src="todo.js"></script>
+</body>
+</html>
